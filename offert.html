@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Neuzeit S LT';
+        font-size: 16pt;
+        height:297mm;
+        width:210mm;
+      }
+
+      h1 {
+        font-family: 'DIN Condensed';
+        font-size: 16pt;
+      }
+
+
+      ul {
+        list-style-type: none;
+      }
+
+      ul > li:before {
+        content: "–"; /* en dash */
+        position: absolute;
+        margin-left: -1.1em;
+      }
+
+      table { border: none; }
+
+      #offert {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .offert { height: 100%; margin: 0 auto; }
+      .kerning { letter-spacing: 2px; }
+
+      .content_numbers {
+        position: absolute;
+        top: 47.5mm;
+        left: 150mm;
+        width: 20mm;
+        height: 20mm;
+        background-color: white;
+        font-size: 8pt;
+        line-height: 8pt;
+        text-align: right;
+      }
+      .content_orderer {
+        position: absolute;
+        top: 71mm;
+        left: 40mm;
+        width: 63mm;
+        height: 60mm;
+        background-color: white;
+        font-size: 8pt;
+        line-height: 8pt;
+        text-align: center;
+      }
+
+      .content_supplier {
+        position: absolute;
+        top: 71mm;
+        left: 106mm;
+        width: 64mm;
+        height: 60mm;
+        background-color: white;
+        font-size: 8pt;
+        line-height: 8pt;
+        text-align: center;
+      }
+
+      .content_articles {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 50mm;
+        top: 147mm;
+        left: 32.5mm;
+        font-size: 8pt;
+        line-height: 16pt;
+      }
+
+      .content_totalprice {
+        position: absolute;
+        width: 100%;
+        top: 217mm;
+        height: 10mm;
+        background-color: white;
+        font-family: 'DIN Condensed';
+        font-size: 20pt;
+        line-height: 20pt;
+        text-align: center;
+        letter-spacing: 4px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 50mm;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="offert">
+      <img class="offert" src="offer.png" />
+      <div class="content_numbers">
+        <p>0000000</p>
+        <p>2017-01-01</p>
+        <p>2017-02-01</p>
+      </div>
+      <div class="content_orderer">
+        <p class="kerning">BESTÄLLARE</p>
+        <p>Företag AB</p>
+        <p>Gata 1</p>
+        <p>12525 Stockholm</p>
+        <br/><br/><br/>
+        <p class="kerning">ER REFERENS</p>
+        <p>Random Person</p>
+        <p>+46 70719 56 51</p>
+        <p>epost@foretag.se</p>
+      </div>
+      <div class="content_supplier">
+        <p class="kerning">LEVERANTÖR</p>
+        <p>Konglig Datasektionen</p>
+        <p>Att: Studs 2017, Fack vid THS</p>
+        <p>100 44 Stockholm</p>
+        <p>Org. nummer: 802412-7709 </p>
+        <br/>
+        <p class="kerning">VÅR REFERENS</p>
+        <p>Vem Då</p>
+        <p>+46 70719 56 51</p>
+        <p>epost@studieresan.se</p>
+      </div>
+      <div class="content_articles">
+        <ul>
+          <li>Ett event med Studs-gruppen.</li>
+          <li>Vi garanterar 28 deltagande datastudenter i slutet av sin utbildning.</li>
+          <li>Vi tillhandahåller CV-databas med alla medlemmar i Studs.</li>
+          <li>Ni tillhandahåller lokal, samt bjuder på mat och dryck.</li>
+          <li>Eventet pågår ca 3 timmar.</li>
+          <li>Eventet sker onsdagen den 18e januari 2017.</li>
+        </ul>
+      </div>
+      <div class="content_totalprice">
+        120 SEK
+      </div>
+    </div>
+  </body>
+</html>
