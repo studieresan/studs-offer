@@ -13,16 +13,16 @@ get '/offer.png' do
  send_file 'offer.png'
 end
 
+get '/offer-2018.png' do
+ send_file 'offer-2018.png'
+end
+
 get '/dincondensed.ttf' do
  send_file 'dincondensed.ttf'
 end
 
 get '/neuzeitslt.ttf' do
  send_file 'neuzeitslt.ttf'
-end
-
-get '/offer.png' do
- send_file 'offer.png'
 end
 
 get '/generate' do
@@ -38,7 +38,7 @@ __END__
     %link{rel: 'stylesheet', href: '/style.css'}
   %body
     #offert
-      %img.offert{:src => "offer.png"}/
+      %img.offert{:src => "offer-2018.png"}/
       %form{ action: '/generate' }
         .content_numbers
           %p
@@ -83,7 +83,7 @@ __END__
           %ul
             %textarea{name: 'articles'}
               %li Ett event med Studs-gruppen.
-              %li Vi garanterar 28 deltagande datastudenter i slutet av sin utbildning.
+              %li Vi garanterar 32 deltagande datastudenter i slutet av sin utbildning.
               %li Vi tillhandahåller CV-databas med alla medlemmar i Studs.
               %li Ni tillhandahåller lokal, samt bjuder på mat och dryck.
               %li Eventet pågår ca 3 timmar.
@@ -98,7 +98,7 @@ __END__
     %link{rel: 'stylesheet', href: '/style.css'}
   %body
     #offert
-      %img.offert{:src => "offer.png"}/
+      %img.offert{:src => "offer-2018.png"}/
       .content_numbers
         %p= locals[:offer_number] || '0000000'
         %p= locals[:offer_date] || '2017-01-01'
