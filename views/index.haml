@@ -1,0 +1,59 @@
+!!!
+%html
+  %head
+    %link{rel: 'stylesheet', href: '/style.css'}
+  %body
+    #offert
+      %img.offert{:src => "offer-2018.png"}/
+      %form{ action: '/generate' }
+        .content_numbers
+          %p
+            %input{placeholder: '0000000', name: 'offer_number' }
+          %p
+            %input{placeholder: '2017-01-01', name: 'offer_date' }
+          %p
+            %input{placeholder: '2017-02-01', name: 'offer_due_date' }
+        .content_orderer
+          %p.kerning BESTÄLLARE
+          %p
+            %input{placeholder: 'Företag AB', name: 'company_name' }
+          %p
+            %input{placeholder: 'Gata 1', name: 'company_adress' }
+          %p
+            %input{placeholder: '12525 Stockholm', name: 'company_postal' }
+          %br/
+          %br/
+          %br/
+          %p.kerning ER REFERENS
+          %p
+            %input{placeholder: 'Random Person', name: 'company_reference' }
+          %p
+            %input{placeholder: '+46 70719 56 51', name: 'company_reference_phone' }
+          %p
+            %input{placeholder: 'epost@foretag.se', name: 'company_reference_mail' }
+        .content_supplier
+          %p.kerning LEVERANTÖR
+          %p Konglig Datasektionen
+          %p Att: Studs 2017, Fack vid THS
+          %p 100 44 Stockholm
+          %p Org. nummer: 802412-7709
+          %br/
+          %p.kerning VÅR REFERENS
+          %p
+            %input{placeholder: 'Vem Då', name: 'our_reference' }
+          %p
+            %input{placeholder: '+46 70719 56 51', name: 'our_reference_phone' }
+          %p
+            %input{placeholder: 'epost@studieresan.se', name: 'our_reference_mail' }
+        .content_articles
+          %ul
+            %textarea{name: 'articles'}
+              %li Ett event med Studs-gruppen.
+              %li Vi garanterar 32 deltagande datastudenter i slutet av sin utbildning.
+              %li Vi tillhandahåller CV-databas med alla medlemmar i Studs.
+              %li Ni tillhandahåller lokal, samt bjuder på mat och dryck.
+              %li Eventet pågår ca 3 timmar.
+              %li Eventet sker onsdagen den 18e januari 2017.
+        .content_totalprice
+          %input{placeholder: '120 SEK', name: 'price' }
+        %input{type: 'submit'}
