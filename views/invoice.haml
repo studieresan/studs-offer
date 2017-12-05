@@ -4,11 +4,11 @@
     %link{rel: 'stylesheet', href: '/style.css'}
   %body
     #offert
-      %img.offert{:src => "offer.png"}/
+      %img.offert{:src => "invoice.png"}/
       .content_numbers
-        %p= locals[:offer_number] || '0000000'
-        %p= locals[:offer_date] || '2017-01-01'
-        %p= locals[:offer_due_date] || '2017-02-01'
+        %p= locals[:invoice_number] || '0000000'
+        %p= locals[:invoice_date] || '2017-01-01'
+        %p= locals[:invoice_due_date] || '2017-02-01'
       .content_orderer
         %p.kerning BESTÄLLARE
         %p= locals[:company_name] || 'Företag AB'
@@ -32,8 +32,12 @@
         %p= locals[:our_reference] || 'Studsmedlem'
         %p= locals[:our_reference_phone] || '+46 12345 67 89'
         %p= locals[:our_reference_mail] || 'person@kth.se'
-      .content_articles
-        %ul
-          = locals[:articles]
+      .content_articles_invoice
+        %table
+          - (1..7).each do |i|
+            %tr
+              %td.content= locals["article_#{i}_content".to_sym]
+              %td.amount= locals["article_#{i}_amount".to_sym]
+              %td.price= locals["article_#{i}_price".to_sym]
       .content_totalprice
         = locals[:price] || '120 SEK'

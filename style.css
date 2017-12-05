@@ -106,6 +106,43 @@ table { border: none; }
   height: 50mm;
 }
 
+.content_articles_invoice {
+  position: absolute;
+  background-color: white;
+  width: 140mm;
+  height: 40mm;
+  top: 160mm;
+  left: 32.5mm;
+  font-size: 8pt;
+  line-height: 16pt;
+}
+
+.content_articles_invoice .article {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content_articles_invoice table {
+  width: 100%;
+}
+
+.content_articles_invoice .content {
+  width: 60mm;
+  padding-left: 5mm;
+  text-align: center;
+}
+
+.content_articles_invoice .amount {
+  width: 30mm;
+  text-align: center;
+}
+
+.content_articles_invoice .price {
+  width: 30mm;
+  text-align: center;
+}
+
 .content_totalprice {
   position: absolute;
   width: 100%;
