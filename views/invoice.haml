@@ -1,0 +1,38 @@
+#offert
+  %img.offert{:src => "invoice.png"}/
+  .content_numbers
+    %p= locals[:invoice_number] || '0000000'
+    %p= locals[:invoice_date] || '2017-01-01'
+    %p= locals[:invoice_due_date] || '2017-02-01'
+  .content_orderer
+    %p.kerning BESTÄLLARE
+    %p= locals[:company_name] || 'Företag AB'
+    %p= locals[:company_adress] || 'Gata 1'
+    %p= locals[:company_postal] || '123 44 Stockholm'
+    %br/
+    %br/
+    %br/
+    %p.kerning ER REFERENS
+    %p= locals[:company_reference] || 'Random Person'
+    %p= locals[:company_reference_phone] || '+46 11111 22 33'
+    %p= locals[:company_reference_mail] || 'person@foretag.se'
+  .content_supplier
+    %p.kerning LEVERANTÖR
+    %p Konglig Datasektionen
+    %p Att: Studs 2018, Fack vid THS
+    %p 100 44 Stockholm
+    %p Org. nummer: 802412-7709
+    %br/
+    %p.kerning VÅR REFERENS
+    %p= locals[:our_reference] || 'Studsmedlem'
+    %p= locals[:our_reference_phone] || '+46 12345 67 89'
+    %p= locals[:our_reference_mail] || 'person@kth.se'
+  .content_articles_invoice
+    %table
+      - (1..7).each do |i|
+        %tr
+          %td.content= locals["article_#{i}_content".to_sym]
+          %td.amount= locals["article_#{i}_amount".to_sym]
+          %td.price= locals["article_#{i}_price".to_sym]
+  .content_totalprice
+    = locals[:price] || '120 SEK'
