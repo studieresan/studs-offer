@@ -10,16 +10,6 @@
   margin-left: 0;
 }
 
-@font-face {
-    font-family: 'Neuzeit S LT';
-    src: url(neuzeitslt.ttf);
-}
-
-@font-face {
-    font-family: 'DIN Condensed';
-    src: url(dincondensed.ttf);
-}
-
 html, body {
   padding: 0;
   margin: 0;
@@ -33,7 +23,6 @@ h1 {
   font-family: 'DIN Condensed';
   font-size: 16pt;
 }
-
 
 ul {
   list-style-type: none;
