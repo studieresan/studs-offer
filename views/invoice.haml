@@ -1,5 +1,7 @@
 #offert
   %img.offert{:src => "invoice.png"}/
+  .content_ocr
+    %p= locals[:ocr_number] || '0000000'
   .content_numbers
     %p= locals[:invoice_number] || '0000000'
     %p= locals[:invoice_date] || '2017-01-01'

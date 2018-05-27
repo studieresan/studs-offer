@@ -45,6 +45,22 @@ table { border: none; }
 .offert { height: 100%; margin: 0 auto; }
 .kerning { letter-spacing: 2px; }
 
+.content_ocr {
+  position: absolute;
+  top: 55.5mm;
+  left: 48mm;
+  width: 20mm;
+  height: 5mm;
+  background-color: white;
+  font-size: 8pt;
+  line-height: 8pt;
+  text-align: left;
+}
+
+.content_ocr p {
+  margin: 0;
+}
+
 .content_numbers {
   position: absolute;
   top: 47.5mm;

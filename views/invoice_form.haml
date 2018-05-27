@@ -1,6 +1,9 @@
 #offert
   %img.offert{:src => "invoice.png"}/
   %form{ action: '/generate_invoice' }
+    .content_ocr
+      %p
+        %input{placeholder: '0000000', name: 'ocr_number' }
     .content_numbers
       %p
         %input{placeholder: '0000000', name: 'invoice_number' }
