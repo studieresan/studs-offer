@@ -10,11 +10,11 @@ get '/invoice' do
 end
 
 get '/style.css' do
- send_file 'style.css'
+  send_file 'style.css'
 end
 
 get '/offer.png' do
- send_file 'offer.png'
+  send_file 'offer.png'
 end
 
 get '/invoice.png' do

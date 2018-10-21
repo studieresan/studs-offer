@@ -2,8 +2,8 @@
   %img.offert{:src => "offer.png"}/
   .content_numbers
     %p= locals[:offer_number] || '0000000'
-    %p= locals[:offer_date] || '2017-01-01'
-    %p= locals[:offer_due_date] || '2017-02-01'
+    %p= locals[:offer_date] || '2018-01-01'
+    %p= locals[:offer_due_date] || '2018-02-01'
   .content_orderer
     %p.kerning BESTÄLLARE
     %p= locals[:company_name] || 'Företag AB'
@@ -19,7 +19,7 @@
   .content_supplier
     %p.kerning LEVERANTÖR
     %p Konglig Datasektionen
-    %p Att: Studs 2018, Fack vid THS
+    %p Att: Studs 2019, Fack vid THS
     %p 100 44 Stockholm
     %p Org. nummer: 802412-7709
     %br/
@@ -31,4 +31,4 @@
     %ul
       = locals[:articles]
   .content_totalprice
-    = locals[:price] || '120 SEK'
+    = locals[:price] || '40000 SEK'
